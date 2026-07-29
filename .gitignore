@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Model Files
+models/
+*.pkl
+*.joblib
+
+# Logs
+logs/
+*.log
+
+# Environment Variables
+.env
+
+# OS Files
+.DS_Store
+Thumbs.db
+# Large generated datasets
+data/generator_features.csv
+data/generator_clean.csv
+
+# Trained models
+models/
+
+# Logs
+logs/

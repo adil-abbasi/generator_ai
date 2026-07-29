@@ -1,0 +1,32 @@
+{
+    "rows": 259210,
+    "columns": 19,
+    "generators": 10,
+    "missing_values": {
+        "timestamp": 0,
+        "generator_id": 0,
+        "site_name": 0,
+        "capacity_kva": 0,
+        "status": 0,
+        "fuel_level_l": 0,
+        "fuel_rate_lph": 0,
+        "load_pct": 0,
+        "load_kw": 0,
+        "rpm": 0,
+        "voltage": 0,
+        "current": 0,
+        "frequency": 0,
+        "power_factor": 0,
+        "oil_pressure_bar": 0,
+        "coolant_temp_c": 0,
+        "ambient_temp_c": 0,
+        "battery_voltage": 0,
+        "running_hours": 0
+    },
+    "duplicate_rows": 0,
+    "duplicate_timestamp_generator": 0,
+    "physics_violations": [],
+    "range_violations": [],
+    "time_series_violations": [],
+    "overall_status": "PASS"
+}
