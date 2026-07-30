@@ -1,5 +1,6 @@
 import argparse
-
+import json
+from datetime import datetime
 import pandas as pd
 from catboost import CatBoostRegressor
 from sklearn.metrics import (
@@ -10,17 +11,14 @@ from sklearn.metrics import (
 
 import numpy as np
 from config import (
-    
     TRAIN_PATH,
     VALID_PATH,
     TEST_PATH,
     MODEL_DIR,
+    METRICS_DIR,
     CATBOOST_PARAMS,
     DROP_COLUMNS
-    
-    
 )
-
 
 
 from utils import evaluate_model
@@ -141,7 +139,34 @@ print(f"MAE    : {mae:.3f}")
 print(f"RMSE   : {rmse:.3f}")
 
 print(f"R²     : {r2:.4f}")
+metrics = {
+    "target": TARGET,
+    "mae": float(mae),
+    "rmse": float(rmse),
+    "r2": float(r2),
+    "best_iteration": model.get_best_iteration(),
+    "training_rows": len(train_df),
+    "validation_rows": len(valid_df),
+    "test_rows": len(test_df),
+    "training_date": datetime.now().isoformat()
+}
 
+# -----------------------------
+# Save Evaluation Metrics
+# -----------------------------
+
+METRICS_PATH = METRICS_DIR / f"{TARGET}.json"
+
+print("\nSaving Evaluation Metrics...")
+
+with open(METRICS_PATH, "w") as file:
+    json.dump(metrics, file, indent=4)
+
+print(f"Metrics Saved : {METRICS_PATH}")
+
+# -----------------------------
+# Save Trained Model
+# -----------------------------
 
 MODEL_PATH = MODEL_DIR / f"{TARGET}.cbm"
 

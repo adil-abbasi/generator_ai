@@ -1,0 +1,11 @@
+{
+    "target": "target_fuel_level_l",
+    "mae": 5.061143101604011,
+    "rmse": 10.682975085081276,
+    "r2": 0.9994098266168896,
+    "best_iteration": 631,
+    "training_rows": 181440,
+    "validation_rows": 38880,
+    "test_rows": 38880,
+    "training_date": "2026-07-30T16:16:42.171002"
+}
