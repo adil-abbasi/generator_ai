@@ -1,0 +1,11 @@
+{
+    "target": "target_fuel_rate_lph",
+    "mae": 2.099327544445066,
+    "rmse": 4.081976861049901,
+    "r2": 0.995525071097399,
+    "best_iteration": 979,
+    "training_rows": 181440,
+    "validation_rows": 38880,
+    "test_rows": 38880,
+    "training_date": "2026-07-30T17:02:36.883230"
+}

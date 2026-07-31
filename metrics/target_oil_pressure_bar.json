@@ -1,0 +1,11 @@
+{
+    "target": "target_oil_pressure_bar",
+    "mae": 0.026216313222784338,
+    "rmse": 0.057633643341543986,
+    "r2": 0.9992435301987316,
+    "best_iteration": 999,
+    "training_rows": 181440,
+    "validation_rows": 38880,
+    "test_rows": 38880,
+    "training_date": "2026-07-30T17:20:46.307485"
+}

@@ -1,0 +1,11 @@
+{
+    "target": "target_load_kw",
+    "mae": 9.208173169811067,
+    "rmse": 18.036640759047213,
+    "r2": 0.9935492956166093,
+    "best_iteration": 965,
+    "training_rows": 181440,
+    "validation_rows": 38880,
+    "test_rows": 38880,
+    "training_date": "2026-07-30T17:08:43.612586"
+}

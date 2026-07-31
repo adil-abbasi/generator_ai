@@ -5,7 +5,6 @@ from pathlib import Path
 # ==========================================================
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # ==========================================================
 # Dataset Paths
 # ==========================================================
@@ -16,40 +15,19 @@ VALID_PATH = DATA_DIR / "validation.csv"
 TEST_PATH = DATA_DIR / "test.csv"
 
 # ==========================================================
-# Columns to Exclude
-# ==========================================================
-DROP_COLUMNS = [
-    "timestamp"
-]
-
-# ==========================================================
 # Models Directory
 # ==========================================================
 MODEL_DIR = BASE_DIR / "models"
 MODEL_DIR.mkdir(exist_ok=True)
 
 # ==========================================================
-# Models directory
-MODEL_DIR = BASE_DIR / "models"
-MODEL_DIR.mkdir(exist_ok=True)
-
-# Metrics directory
+# Metrics Directory
+# ==========================================================
 METRICS_DIR = BASE_DIR / "metrics"
 METRICS_DIR.mkdir(exist_ok=True)
 
-# Feature Importance directory
+# ==========================================================
+# Feature Importance Directory
+# ==========================================================
 FEATURE_IMPORTANCE_DIR = BASE_DIR / "feature_importance"
 FEATURE_IMPORTANCE_DIR.mkdir(exist_ok=True)
-# ==========================================================
-# CatBoost Hyperparameters
-# ==========================================================
-CATBOOST_PARAMS = {
-    "iterations": 1000,
-    "learning_rate": 0.05,
-    "depth": 8,
-    "loss_function": "RMSE",
-    "eval_metric": "RMSE",
-    "random_seed": 42,
-    "verbose": 100
-}
-
